@@ -1,0 +1,9 @@
+# app-ads.txt file for Reflexxx Game
+# This file is used to verify that only authorized sellers are allowed to sell your app's ad inventory.
+# For more information, see: https://support.google.com/admob/answer/9363762
+
+# Google AdMob
+# IMPORTANT: Replace "pub-XXXXXXXXXXXXXXXX" with your actual AdMob Publisher ID
+# You can find your Publisher ID in your AdMob account under:
+# Account -> Account Information -> Publisher ID (format: pub-XXXXXXXXXXXXXXXX)
+google.com, pub-jjjjj, DIRECT, jjjjjj

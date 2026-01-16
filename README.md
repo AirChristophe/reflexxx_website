@@ -1,120 +1,120 @@
-# Reflexxx Game - Site Web Développeur
+# Reflexxx Game - Developer Website
 
-Ce site web est conçu pour répondre aux exigences de publication sur Google Play Store et Apple App Store pour l'application Reflexxx Game.
+This website is designed to meet the publication requirements for Google Play Store and Apple App Store for the Reflexxx Game application.
 
-## Structure du site
+## Site Structure
 
 ```
-memory_game_website/
-├── index.html          # Page d'accueil présentant l'application
-├── privacy.html        # Politique de confidentialité (requis par les stores)
-├── terms.html          # Conditions d'utilisation (requis par les stores)
-├── support.html        # Page de support et FAQ (requis par les stores)
-├── app-ads.txt         # Fichier requis par Google AdMob
+reflexxx_game_website/
+├── index.html          # Home page presenting the app
+├── privacy.html        # Privacy policy (required by the stores)
+├── terms.html          # Terms of Use (required by the stores)
+├── support.html        # Support and FAQ page (required by the stores)
+├── app-ads.txt         # File required by Google AdMob
 ├── css/
-│   └── style.css       # Styles du site
+│   └── style.css       # Site styles
 ├── images/
-│   └── .gitkeep        # Dossier pour les images (à ajouter)
-└── README.md           # Ce fichier
+│   └── .gitkeep        # Folder for images (to add)
+└── README.md           # This file
 ```
 
-## Configuration requise
+## Required Configuration
 
-### 1. Fichier app-ads.txt
+### 1. `app-ads.txt` File
 
-Le fichier `app-ads.txt` doit être modifié avec votre Publisher ID AdMob :
+The `app-ads.txt` file must be updated with your AdMob Publisher ID:
 
-1. Connectez-vous à votre compte AdMob : https://admob.google.com
-2. Allez dans **Compte > Informations du compte**
-3. Copiez votre **Publisher ID** (format : `pub-XXXXXXXXXXXXXXXX`)
-4. Remplacez `pub-XXXXXXXXXXXXXXXX` dans le fichier `app-ads.txt`
+1. Sign in to your AdMob account: https://admob.google.com
+2. Go to **Account > Account information**
+3. Copy your **Publisher ID** (format: `pub-XXXXXXXXXXXXXXXX`)
+4. Replace `pub-XXXXXXXXXXXXXXXX` in the `app-ads.txt` file
 
-### 2. Images à ajouter
+### 2. Images to Add
 
-Ajoutez les images suivantes dans le dossier `images/` :
+Add the following images to the `images/` folder:
 
-- `favicon.png` - Favicon du site (32x32 ou 64x64 pixels)
-- `app-screenshot.png` - Capture d'écran principale pour la section hero
-- `screenshot-1.png`, `screenshot-2.png`, `screenshot-3.png` - Captures d'écran de l'app
-- `google-play-badge.png` - Badge Google Play Store
-- `app-store-badge.png` - Badge Apple App Store
+- `favicon.png` — Site favicon (32x32 or 64x64 pixels)
+- `app-screenshot.png` — Main screenshot for the hero section
+- `screenshot-1.png`, `screenshot-2.png`, `screenshot-3.png` — App screenshots
+- `google-play-badge.png` — Google Play Store badge
+- `app-store-badge.png` — Apple App Store badge
 
-Vous pouvez télécharger les badges officiels ici :
-- Google Play : https://play.google.com/intl/en_us/badges/
-- App Store : https://developer.apple.com/app-store/marketing/guidelines/
+You can download official badges here:
+- Google Play: https://play.google.com/intl/en_us/badges/
+- App Store: https://developer.apple.com/app-store/marketing/guidelines/
 
-### 3. Personnalisation
+### 3. Customization
 
-Modifiez les éléments suivants selon vos besoins :
+Update the following items as needed:
 
-- **Adresses email** : Remplacez les emails `support@memorygame.app`, `privacy@memorygame.app`, etc.
-- **Liens des stores** : Ajoutez les vrais liens vers vos applications une fois publiées
-- **Nom du développeur** : Vérifiez que votre nom est correct dans `support.html`
+- **Email addresses**: Replace `support@memorygame.app`, `privacy@memorygame.app`, etc.
+- **Store links**: Add the real links to your apps once published
+- **Developer name**: Verify your name is correct in `support.html`
 
-## Déploiement
+## Deployment
 
-### Option 1 : Firebase Hosting (Recommandé)
+### Option 1: Firebase Hosting (Recommended)
 
 ```bash
-# Installer Firebase CLI
+# Install Firebase CLI
 npm install -g firebase-tools
 
-# Se connecter à Firebase
+# Sign in to Firebase
 firebase login
 
-# Initialiser le projet
+# Initialize the project
 firebase init hosting
 
-# Déployer
+# Deploy
 firebase deploy
 ```
 
-### Option 2 : GitHub Pages
+### Option 2: GitHub Pages
 
-1. Créez un repository GitHub
-2. Poussez les fichiers
-3. Activez GitHub Pages dans les paramètres
+1. Create a GitHub repository
+2. Push the files
+3. Enable GitHub Pages in settings
 
-### Option 3 : Netlify / Vercel
+### Option 3: Netlify / Vercel
 
-Connectez votre repository et le déploiement sera automatique.
+Connect your repository and deployment will be automatic.
 
-## Exigences des Stores
+## Store Requirements
 
 ### Google Play Store
 
-- ✅ Politique de confidentialité (`privacy.html`)
-- ✅ Page de support avec informations de contact (`support.html`)
-- ✅ Site web développeur pour app-ads.txt
+- ✅ Privacy policy (`privacy.html`)
+- ✅ Support page with contact information (`support.html`)
+- ✅ Developer website for app-ads.txt
 
 ### Apple App Store
 
-- ✅ Politique de confidentialité (`privacy.html`)
-- ✅ URL marketing (page d'accueil `index.html`)
-- ✅ URL de support (`support.html`)
-- ✅ Conditions d'utilisation (`terms.html`)
+- ✅ Privacy policy (`privacy.html`)
+- ✅ Marketing URL (home page `index.html`)
+- ✅ Support URL (`support.html`)
+- ✅ Terms of Use (`terms.html`)
 
 ### Google AdMob
 
-- ✅ Fichier `app-ads.txt` à la racine du site
-- ⚠️ **Important** : Remplacez le Publisher ID avec le vôtre
+- ✅ `app-ads.txt` file at the site root
+- ⚠️ **Important**: Replace the Publisher ID with yours
 
-## Vérification app-ads.txt
+## Verify `app-ads.txt`
 
-Une fois le site déployé, vérifiez que le fichier est accessible :
+Once the site is deployed, verify that the file is accessible:
 
 ```
-https://votredomaine.com/app-ads.txt
+https://yourdomain.com/app-ads.txt
 ```
 
-Dans AdMob :
-1. Allez dans **Applications > Voir toutes les applications**
-2. Cliquez sur **app-ads.txt**
-3. Vérifiez le statut de votre fichier
+In AdMob:
+1. Go to **Apps > View all apps**
+2. Click **app-ads.txt**
+3. Check your file status
 
 ## Contact
 
-Pour toute question, consultez la documentation :
+For any questions, see the documentation:
 - [Google AdMob app-ads.txt](https://support.google.com/admob/answer/9363762)
 - [Google Play Console](https://play.google.com/console)
 - [App Store Connect](https://appstoreconnect.apple.com)
